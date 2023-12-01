@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "adelco-corp-cicd",
+  "private_key_id": "3ce2a6ed16be40ea58ad39af211f5c59bc4f6687",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCRdToiL7BYqqmZ\nmedCSH26G3PG8f8aEuNkTZ54I457xyzUlrhrnlG/c8KvlOS/IEpU0RE0+EX07VbF\nWpKDfKN1Qcf+4y85mBsGD/Gq/awFmyEYZ64u4ntRgz3WNnALSLh2RarprruNNJA4\noDoRoYysVnVHYRaLahA6R3hcFJiz0wAb/Rp5c9fVc1r1aR6pwTDzSDpBZcTaXw8H\nzmZCHfyFBawJkl6f5feiLvUTaZ1swi/LP/00gr74Mv5LUfVkB2uL8iBbc3TFFGL7\noEBswuF13t1ZhXCrLA9HXPf3VjnR5mCZ8S6uuf4MlLP7b9/sdjz1Xm+Mg4h42koV\nBTDPdBl5AgMBAAECggEACqwfuk9mcHMBI6B7q8zW0Ldf7MpnrbmSDpN1W5o8Q4+v\nFeADIv5IQDRVpf1WNUHAwm1ehlTrCRf65FsLYfNcqOdNLcHsfpzO6shzsliPbQ/f\nQ0OkL5N1edsXx+ZRnTpWMnNVIXUtFKS1KjpzWETSpfhn/Xc9qLf8/dGtno/yTktC\nJXAvYUwtx9/leX+NS1isHO7PIsUZ78XK/Ehy16hMNYWL6sejOzeBOJUXLTWTVAwh\nq4eVqgdqxkLjO+KNeHwiwV6uN1m7FH7he/Q9ucpJxQCvB13IE6Xz97dkPl0Ym7m5\n2xVaQ2BTI5Tt5CQGzNrkvEWw5fd38d9SMvPi4btBmwKBgQDFLVGnjgd4UHbHipe+\nakXYT/303WmtSgnNmkcGLE5FXIA2yngq5kBHZw/owU1cMt4NxLJt9osweIR+1lcz\nGxybMx3/YyuhLNYlIhWoE3SWNqfHEhuefRkbe6BaxxczYAbv8c/8pz4pYc+KDrgG\n+16MM/rW41ZdOYYIqMIL0bH8HwKBgQC82gxu+xleiB5IwU2ln7aTrKNBqN0K7R3R\n6iNpjl0gIPKgwIYJg61HPSeGpev92Hc/Wgt8eCBZJMs/ShSIyN8kRy7sZQYvvUyy\nc7x/RYbbdL/iE01rx0SQoQvqbLv6ji2eBs3ibLaNdv3Wk0EZ0eJXEL7rOen1l0QR\nLHoz1rM3ZwKBgFx5NKJwafBzTEGpLiGPldItMd11Oeqbnp1ejZDHlq3RBBCuRE1a\nTystmrh+b9mdwaaTaVtJFV5WJ02VGLBPNstS3e64g+3DKWug4KdC+Jq6Z1VlmK5r\n3SqWgE4SsT7W+mnt7q1/ghfGV59X59bebSkz96BwXkC6ibHl85u3bNHhAoGAZbQQ\nChyUNwKbPJdNl6qBitnoOc4U7HNyIcA0Pf57THgx8jx8ctdFFB5tEOh+RQC0h5uY\nn/mZgih8hKMCl/+FnGXxcUGeqUsK6PfHRctNqxYe2EOI6EgyNqlkX2Ubfv3et0H2\n0r+1OE4iudIntx3/BOBx0QApbSd/crg/P3eaoHUCgYASsyW5Ss7ogJbsuDcjAkxJ\nA6mPkODpMCnysJOi/IMRMu4h1u0oy13lx5mRkxhVlGAfN/NqACITJP7Wn1wt1kOE\n4RgWK7+Wb7AdxzBdCvOUDCm932CF/FNFcwV1rY69jmy7aGGakdiN9p4fzpr/5+4b\nrIvLWxYb0Il0lq2nlKhTcA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "reader-npm-repository@adelco-corp-cicd.iam.gserviceaccount.com",
+  "client_id": "113654924816633178700",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reader-npm-repository%40adelco-corp-cicd.iam.gserviceaccount.com"
+}

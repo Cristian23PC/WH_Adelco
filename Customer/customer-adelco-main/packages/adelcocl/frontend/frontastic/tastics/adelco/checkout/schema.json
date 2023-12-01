@@ -1,0 +1,12 @@
+{
+  "tasticType": "adelco/ui/checkout",
+  "name": "Adelco UI Checkout",
+  "icon": "add_shopping_cart",
+  "category": "Checkout",
+  "schema": [
+    {
+      "name": "Content",
+      "fields": []
+    }
+  ]
+}

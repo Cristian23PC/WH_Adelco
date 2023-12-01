@@ -1,0 +1,69 @@
+<!--- GettingStarted.stories.mdx --->
+
+import { Meta } from '@storybook/addon-docs';
+import VersionInfo from './VersionInfo';
+
+<Meta title="Introduction/Getting Started" />
+
+<img src="adelco-logo.png" width="300" />
+
+<br />
+<br />
+
+# Getting Started
+
+The Adelco Web Components is a set of React components, with atomic components (buttons, input fields, etc) and other components to be used on Adelco's ecommerce web client application.
+
+## Installation
+
+
+```bash
+  yarn add @adelco/web-components
+```
+
+## Using components
+
+### Importing the CSS file
+
+Import the css styles in your app, in the index.js file
+
+```javascript
+import '@adelco/web-components/dist/adelco.css';
+```
+
+### Importing components
+
+Import a component in your page and use it as a React component.
+
+```javascript
+import { Button } from '@adelco/web-components';
+
+const Example = () => {
+  return (
+    <div>
+      <Button variant="primary">Primary Button</Button>
+    </div>
+  );
+};
+
+export default Example;
+```
+
+## Usage
+
+All the components of this library are available on the navigation menu of this Storybook.
+
+Each component page describes his attributes and usability, on the Canvas and Doc Tabs.
+
+- On Canvas tab you can test all possible controls and check the component behaviors. Some components can have available the Figma file the the design guide.
+
+- Docs tab describes the components in details, with a table of his arguments. Bellow each component usage example, there is a "Show code" which button shows a code sample.
+<br />
+## Version and changelog
+
+<VersionInfo />
+
+<br />
+
+
+- Components Changelog: https://gitlab.com/adelco_corp/commerce/frontend-apps/web-client-components/-/blob/main/CHANGELOG.md

@@ -1,0 +1,7 @@
+{
+  "customDataSourceType": "adelco/product",
+  "name": "Adelco Product",
+  "category": "Products",
+  "icon": "view_list",
+  "schema": []
+}

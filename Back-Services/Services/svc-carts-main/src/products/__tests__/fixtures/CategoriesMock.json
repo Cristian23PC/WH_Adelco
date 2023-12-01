@@ -1,0 +1,120 @@
+[
+  {
+    "id": "de16225f-47a6-46aa-9444-2dc2b7270ce2",
+    "version": 1,
+    "createdAt": "2023-03-13T19:06:33.590Z",
+    "lastModifiedAt": "2023-03-13T19:06:33.590Z",
+    "key": "C101",
+    "name": {
+      "es-CL": "ESTRUCTURA ADELCO"
+    },
+    "slug": {
+      "es-CL": "estructura-adelco-C101"
+    },
+    "description": {
+      "es-CL": "ESTRUCTURA ADELCO"
+    },
+    "ancestors": [],
+    "orderHint": "0.1",
+    "externalId": "C101",
+    "metaTitle": {
+      "es-CL": "ESTRUCTURA ADELCO"
+    },
+    "custom": {
+      "type": {
+        "typeId": "type",
+        "id": "df0d593d-5add-43a6-a29f-103375df9909"
+      },
+      "fields": {
+        "categoryType": "category"
+      }
+    },
+    "assets": []
+  },
+  {
+    "id": "72908937-96d3-4790-a7d9-2bb7ef9fafcc",
+    "version": 1,
+    "createdAt": "2023-03-13T19:06:33.911Z",
+    "lastModifiedAt": "2023-03-13T19:06:33.911Z",
+    "key": "C1010370",
+    "name": {
+      "es-CL": "LACTEOS, REFRIGERADOS Y HUEVOS"
+    },
+    "slug": {
+      "es-CL": "lacteos-refrigerados-y-huevos-C1010370"
+    },
+    "description": {
+      "es-CL": "LACTEOS, REFRIGERADOS Y HUEVOS"
+    },
+    "ancestors": [
+      {
+        "typeId": "category",
+        "id": "de16225f-47a6-46aa-9444-2dc2b7270ce2"
+      }
+    ],
+    "parent": {
+      "typeId": "category",
+      "id": "de16225f-47a6-46aa-9444-2dc2b7270ce2"
+    },
+    "orderHint": "0.0",
+    "externalId": "C1010370",
+    "metaTitle": {
+      "es-CL": "LACTEOS, REFRIGERADOS Y HUEVOS"
+    },
+    "custom": {
+      "type": {
+        "typeId": "type",
+        "id": "df0d593d-5add-43a6-a29f-103375df9909"
+      },
+      "fields": {
+        "categoryType": "category"
+      }
+    },
+    "assets": []
+  },
+  {
+    "id": "0c4c2eb0-ac8f-46c2-96c6-c3dee345bd4f",
+    "version": 1,
+    "createdAt": "2023-03-13T19:06:34.368Z",
+    "lastModifiedAt": "2023-03-13T19:06:34.368Z",
+    "key": "C10103700061",
+    "name": {
+      "es-CL": "QUESOS"
+    },
+    "slug": {
+      "es-CL": "quesos-C10103700061"
+    },
+    "description": {
+      "es-CL": "QUESOS"
+    },
+    "ancestors": [
+      {
+        "typeId": "category",
+        "id": "de16225f-47a6-46aa-9444-2dc2b7270ce2"
+      },
+      {
+        "typeId": "category",
+        "id": "72908937-96d3-4790-a7d9-2bb7ef9fafcc"
+      }
+    ],
+    "parent": {
+      "typeId": "category",
+      "id": "72908937-96d3-4790-a7d9-2bb7ef9fafcc"
+    },
+    "orderHint": "0.1",
+    "externalId": "C10103700061",
+    "metaTitle": {
+      "es-CL": "QUESOS"
+    },
+    "custom": {
+      "type": {
+        "typeId": "type",
+        "id": "df0d593d-5add-43a6-a29f-103375df9909"
+      },
+      "fields": {
+        "categoryType": "family"
+      }
+    },
+    "assets": []
+  }
+]

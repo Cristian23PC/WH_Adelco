@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    // Use CommonJS in order to enable lazy loading
+    "module": "CommonJS",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react",
+    "declaration": true
+  },
+  "include": ["src"]
+}

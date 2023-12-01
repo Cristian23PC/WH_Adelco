@@ -1,0 +1,23 @@
+{
+    "name": "frontastic-catwalk/adelco-adelcocl",
+    "license": "None",
+    "config": {
+        "discard-changes": true
+    },
+    "require": {
+        "frontastic/catwalk": "*",
+        "frontastic/common": "*"
+    },
+    "require-dev":  {
+    },
+    "autoload": {
+        "psr-4": {
+            "Adelco\\": ["src/php", "../adelco/src/php"]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adelco\\": ["test/php", "../adelco/test/php"]
+        }
+    }
+}

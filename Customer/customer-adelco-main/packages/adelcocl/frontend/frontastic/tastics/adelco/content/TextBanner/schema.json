@@ -1,0 +1,42 @@
+{
+  "tasticType": "adelco/ui/textbanner",
+  "name": "Adelco Text Banner",
+  "icon": "image",
+  "category": "Content",
+  "schema": [
+    {
+      "name": "Text Banner",
+      "helpText": "Title",
+      "fields": [
+        {
+          "label": "Title",
+          "field": "title",
+          "type": "string",
+          "required": false
+        },
+        {
+          "label": "Text",
+          "field": "text",
+          "type": "string",
+          "required": false
+        },
+        {
+          "label": "Variant",
+          "field": "variant",
+          "type": "enum",
+          "required": true,
+          "values": [
+            {
+              "name": "Primary",
+              "value": "primary"
+            },
+            {
+              "name": "Secondary",
+              "value": "secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

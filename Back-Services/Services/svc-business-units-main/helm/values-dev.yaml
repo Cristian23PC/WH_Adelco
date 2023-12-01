@@ -1,0 +1,96 @@
+---
+appName: svc-business-units
+appVersion: {{ version }}
+
+image:
+  repository: us-central1-docker.pkg.dev/adelco-corp-commerce-dev/docker-repo-dev/svc-business-units
+  tag: {{ version }}
+  pullPolicy: Always
+
+
+replicaCount: 1
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+environmentVariables:
+  CT_API_URL: "https://api.us-central1.gcp.commercetools.com"
+  CT_AUTH_URL: "https://auth.us-central1.gcp.commercetools.com"
+  CT_PROJECT_KEY: "adelco-dev"
+  GCP_PROJECT: "adelco-corp-commerce-dev"
+  GCP_CT_CREDENTIALS_NAME: "CT_CLIENT_ID_BUSINESS_UNITS_SVC"
+  ENVIRONMENT: "development"
+  SWAGGER_ENV: "dev"
+  KEYCLOAK_HOST: "https://qa-dia.adelco.cl/"
+  KEYCLOAK_REALM: "DMI"
+  KEYCLOAK_CLIENT_ID: "business-units-users"
+  KEYCLOAK_CLIENT_SECRET: "KEYCLOAK_CLIENT_SECRET_VALUE"
+  RUT_VERIFICATION_SERVICE_URL: "https://api-nonprod.adelco.cl/taxpayers/v1/companies"
+  NOTIFICATION_TOPIC_NAME: "mail-notification-topic"
+  VALID_USERNAME_LIST: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+$"
+  ROOT_PATH: "business"
+  PAYMENT_METHOD_CONTAINER_NAME: 'payment-method'
+  MINIMUM_ORDER_CENT_AMOUNT: 40000
+  DIVISION_LIMIT: 50
+  SEQUENCE_CONTAINER_NAME: "sequence"
+  BUSINESS_UNIT_KEY: "businessUnitKey"
+
+livenessProbe:
+  livenessProbePath: business/v1/health/live
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+readinessProbe:
+  readinessProbePath: business/v1/health/ready
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+startupProbe:
+  startupProbePath: business/v1/health/ready
+  failureThreshold: 30
+  periodSeconds: 10
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+
+nodeSelector:
+  iam.gke.io/gke-metadata-server-enabled: "true"
+
+affinity: {}
+
+tolerations: []
+
+
+terminationGracePeriodSeconds: 90
+
+service:
+  enabled: true
+  name: http-web
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 9376
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+  labels: {}
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 75
+
+serviceAccount:
+  create: true
+  annotations:
+    iam.gke.io/gcp-service-account: sa-svc-business-units@adelco-corp-commerce-dev.iam.gserviceaccount.com

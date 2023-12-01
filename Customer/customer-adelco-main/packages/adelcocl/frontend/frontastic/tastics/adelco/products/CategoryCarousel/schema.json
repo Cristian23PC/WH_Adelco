@@ -1,0 +1,20 @@
+{
+  "tasticType": "adelco/ui/products/category-carousel",
+  "name": "Adelco UI Category Carousel",
+  "icon": "list",
+  "category": "Products",
+  "schema": [
+    {
+      "name": "Configuration",
+      "fields": [
+        {
+          "label": "products",
+          "field": "data",
+          "type": "dataSource",
+          "dataSourceType": "adelco/category-products",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+export const AR = 'ar';
+export const BR = 'br';
+export const CL = 'cl';
+export const CO = 'co';
+export const EC = 'ec';
+export const MX = 'mx';
+export const PE = 'pe';
+export const US = 'us';
+export const VZ = 'vz';

@@ -1,0 +1,91 @@
+{
+  "tasticType": "adelco/ui/banner",
+  "name": "Adelco Main Banner",
+  "icon": "image",
+  "category": "Content",
+  "schema": [
+    {
+      "name": "BannerImages",
+      "helpText": "banner images ",
+      "fields": [
+        {
+          "label": "Image1",
+          "field": "image1",
+          "type": "media",
+          "required": true
+        },
+        {
+          "label": "Image2",
+          "field": "image2",
+          "type": "media",
+          "required": false
+        },
+        {
+          "label": "Image3",
+          "field": "image3",
+          "type": "media",
+          "required": false
+        },
+        {
+          "label": "Image4",
+          "field": "image4",
+          "type": "media",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "BannerLinks",
+      "helpText": "banner links",
+      "fields": [
+        {
+          "label": "bannerLink1",
+          "field": "bannerLink1",
+          "type": "string",
+          "required": true
+        },
+        {
+          "label": "bannerLink2",
+          "field": "bannerLink2",
+          "type": "string",
+          "required": false
+        },
+        {
+          "label": "bannerLink3",
+          "field": "bannerLink3",
+          "type": "string",
+          "required": false
+        },
+        {
+          "label": "bannerLink4",
+          "field": "bannerLink4",
+          "type": "string",
+          "required": false
+        }
+      ]
+    },
+
+    {
+      "name": "BannerLinks",
+      "helpText": "banner links",
+      "fields": [
+        {
+          "label": "Variant",
+          "field": "variant",
+          "type": "enum",
+          "required": true,
+          "values": [
+            {
+              "name": "Primary",
+              "value": "primary"
+            },
+            {
+              "name": "Secondary",
+              "value": "secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

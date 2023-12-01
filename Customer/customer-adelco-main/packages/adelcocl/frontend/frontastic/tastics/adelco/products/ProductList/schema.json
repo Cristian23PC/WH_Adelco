@@ -1,0 +1,27 @@
+{
+  "tasticType": "adelco/ui/products/product-list",
+  "name": "Adelco UI Product List",
+  "icon": "list",
+  "category": "Products",
+  "schema": [
+    {
+      "name": "Configuration",
+      "fields": [
+        {
+          "label": "products",
+          "field": "data",
+          "type": "dataSource",
+          "dataSourceType": "adelco/product-list",
+          "required": true
+        },
+        {
+          "label": "categories",
+          "field": "categories",
+          "type": "dataSource",
+          "dataSourceType": "adelco/complete-category-list",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

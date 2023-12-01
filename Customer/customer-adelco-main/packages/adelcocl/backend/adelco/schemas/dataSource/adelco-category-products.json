@@ -1,0 +1,32 @@
+{
+  "customDataSourceType": "adelco/category-products",
+  "name": "Adelco Category Products",
+  "category": "Products",
+  "icon": "view_list",
+  "schema": [
+    {
+      "name": "Configuration",
+      "fields": [
+        {
+          "label": "Query",
+          "field": "query",
+          "type": "text",
+          "default": "",
+          "translatable": false
+        }
+      ]
+    },
+    {
+      "name": "Category Slug",
+      "fields": [
+        {
+          "label": "Category Slug",
+          "field": "slug",
+          "type": "string",
+          "default": "",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

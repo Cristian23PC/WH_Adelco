@@ -1,0 +1,7 @@
+{
+  "customDataSourceType": "adelco/complete-category-list",
+  "name": "Adelco Complete Category list",
+  "category": "Category",
+  "icon": "view_list",
+  "schema": []
+}

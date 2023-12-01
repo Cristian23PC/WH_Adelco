@@ -1,0 +1,55 @@
+{
+  "tasticType": "adelco/ui/footer",
+  "name": "Adelco UI Footer",
+  "icon": "menu",
+  "category": "Header and footer",
+  "schema": [
+    {
+      "name": "Footer fields",
+      "fields": [
+        {
+          "label": "Instagram link",
+          "field": "instagramLink",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Facebook link",
+          "field": "facebookLink",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Linkedin link",
+          "field": "linkedinLink",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Year",
+          "field": "year",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Address",
+          "field": "address",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Email",
+          "field": "email",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "label": "Phone",
+          "field": "phone",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

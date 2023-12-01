@@ -1,0 +1,12 @@
+{
+  "tasticType": "adelco/ui/cart",
+  "name": "Adelco UI Cart",
+  "icon": "shopping_cart",
+  "category": "Cart",
+  "schema": [
+    {
+      "name": "Content",
+      "fields": []
+    }
+  ]
+}

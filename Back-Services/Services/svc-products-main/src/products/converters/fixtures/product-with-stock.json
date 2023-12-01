@@ -1,0 +1,172 @@
+{
+  "id": "bfd5952d-c688-4202-a1af-507b25898c76",
+  "version": 22,
+  "productType": {
+    "typeId": "product-type",
+    "id": "0d99f336-55cc-4b01-b6b4-c40d2970f579"
+  },
+  "name": {
+    "es-CL": "CALDO COSTILLA NPROF MAGGI 10x1x1kg"
+  },
+  "description": {
+    "es-CL": "CALDO COSTILLA NPROF MAGGI 10x1x1kg"
+  },
+  "categories": [
+    {
+      "typeId": "category",
+      "id": "ab588728-556c-430c-8b96-196eda71e4c9"
+    },
+    {
+      "typeId": "category",
+      "id": "9f957e4c-22f4-4382-9601-3be7df0fdd78"
+    },
+    {
+      "typeId": "category",
+      "id": "33d81f2b-fcb5-4dee-92f1-c6ee1fad3d92"
+    }
+  ],
+  "categoryOrderHints": {},
+  "slug": {
+    "es-CL": "caldo-costilla-nprof-maggi-10x1x1kg-191124"
+  },
+  "variants": [],
+  "masterVariant": {
+    "attributes": [
+      {
+        "name": "enabledForDistributionCenters",
+        "value": [
+          {
+            "key": "LB",
+            "label": "Lo Boza"
+          }
+        ]
+      },
+      {
+        "name": "sellUnit",
+        "value": {
+          "key": "UN",
+          "label": "UNIDAD"
+        }
+      },
+      {
+        "name": "brand",
+        "value": "MAGGI"
+      },
+      {
+        "name": "netContent",
+        "value": "1KG"
+      },
+      {
+        "name": "netWeight",
+        "value": 1.03
+      },
+      {
+        "name": "grossWeight",
+        "value": 1.03
+      },
+      {
+        "name": "weightUnit",
+        "value": "kg"
+      },
+      {
+        "name": "volume",
+        "value": 0.002
+      },
+      {
+        "name": "volumeUnit",
+        "value": "m3"
+      },
+      {
+        "name": "height",
+        "value": 1
+      },
+      {
+        "name": "company",
+        "value": {
+          "key": "2",
+          "label": "Proveedores"
+        }
+      },
+      {
+        "name": "heightUnit",
+        "value": "cm"
+      },
+      {
+        "name": "operationalUnit",
+        "value": "100"
+      },
+      {
+        "name": "operationalUnitQuantity",
+        "value": 1
+      },
+      {
+        "name": "operationalUnitPerBox",
+        "value": 10
+      },
+      {
+        "name": "operationalUnitWeight",
+        "value": 1
+      },
+      {
+        "name": "operationalUnitWeightUnit",
+        "value": "kg"
+      },
+      {
+        "name": "EAN",
+        "value": "7613031237968"
+      },
+      {
+        "name": "DUN",
+        "value": "7613031237975"
+      },
+      {
+        "name": "dangerousGoodsCode",
+        "value": {
+          "key": "017",
+          "label": "N/A"
+        }
+      },
+      {
+        "name": "provider",
+        "value": "0100001707"
+      },
+      {
+        "name": "sapId",
+        "value": "191124"
+      },
+      {
+        "name": "sortingPriority",
+        "value": 0
+      }
+    ],
+    "availability": {
+      "channels": {
+        "9ed85eeb-58d4-45aa-b464-7d55f3f9d6b1": {
+          "isOnStock": true,
+          "availableQuantity": 10,
+          "version": 2,
+          "id": "27c45b72-8168-46ff-8010-25b44d119e98"
+        }
+      }
+    },
+    "assets": [],
+    "images": [],
+    "prices": [],
+    "key": "var-adelco-191124",
+    "sku": "191124",
+    "id": 1
+  },
+  "searchKeywords": {
+    "es-CL": [
+      {
+        "text": "protect"
+      }
+    ]
+  },
+  "hasStagedChanges": false,
+  "published": true,
+  "key": "prod-adelco-191124",
+  "priceMode": "Standalone",
+  "createdAt": "2023-03-31T15:55:50.679Z",
+  "lastModifiedAt": "2023-05-03T09:56:33.503Z"
+}

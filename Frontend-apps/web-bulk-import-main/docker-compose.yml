@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./
+      target: runner
+    volumes:
+      - .:/app
+    command: yarn start
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: production

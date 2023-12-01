@@ -1,0 +1,27 @@
+{
+  "tasticType": "adelco/ui/header",
+  "name": "Adelco UI Header",
+  "icon": "menu",
+  "category": "Header and footer",
+  "schema": [
+    {
+      "name": "Content",
+      "fields": [
+        {
+          "label": "categories",
+          "field": "data",
+          "type": "dataSource",
+          "dataSourceType": "adelco/category-list",
+          "required": true
+        },
+        {
+          "label": "User details",
+          "field": "user",
+          "type": "dataSource",
+          "dataSourceType": "adelco/user-details",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

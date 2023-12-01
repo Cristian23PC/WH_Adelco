@@ -1,0 +1,68 @@
+{
+  "days": [
+    {
+      "label": "Lunes",
+      "value": "monday"
+    },
+    {
+      "label": "Martes",
+      "value": "tuesday"
+    },
+    {
+      "label": "Miércoles",
+      "value": "wednesday"
+    },
+    {
+      "label": "Jueves",
+      "value": "thursday"
+    },
+    {
+      "label": "Viernes",
+      "value": "friday"
+    }
+  ],
+  "frequencyTypes": [
+    {
+      "label": "Semanal",
+      "value": "weekly"
+    },
+    {
+      "label": "Bisemanal",
+      "value": "biweekly"
+    },
+    {
+      "label": "Mensual",
+      "value": "monthly"
+    }
+  ],
+  "groups": {
+    "biweekly": [
+      {
+         "label": "Bisemanal - Grupo A",
+         "value": "3"
+      },
+      {
+        "label": "Bisemanal - Grupo B",
+        "value": "4"
+     }
+    ],
+    "monthly": [
+      {
+        "label": "Mensual - Grupo A",
+        "value": "8"
+      },
+      {
+        "label": "Mensual - Grupo B",
+        "value": "9"
+      },
+      {
+        "label": "Mensual - Grupo C",
+        "value": "10"
+      },
+      {
+        "label": "Mensual - Grupo D",
+        "value": "11"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Día de visita",
+    "value": "weekly"
+  },
+  {
+    "label": "Grupo de visitas",
+    "value": "groups"
+  },
+  {
+    "label": "Compra reciente",
+    "value": "recent-purchase"
+  },
+  {
+    "label": "Territorio",
+    "value": "territories"
+  }
+]

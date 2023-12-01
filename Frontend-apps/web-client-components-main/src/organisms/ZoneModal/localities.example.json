@@ -1,0 +1,17 @@
+[
+  {
+    "key": "locality-1",
+    "label": "Locality 1",
+    "commune": "maria-elena"
+  },
+  {
+    "key": "locality-2",
+    "label": "Locality 2",
+    "commune": "arica"
+  },
+  {
+    "key": "locality-3",
+    "label": "Locality 3",
+    "commune": "maria-elena"
+  }
+]

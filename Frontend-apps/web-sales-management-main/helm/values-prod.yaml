@@ -1,0 +1,99 @@
+---
+appName: web-sales-management
+appVersion: {{ version }}
+
+image:
+  repository: us-central1-docker.pkg.dev/adelco-corp-commerce-prod/docker-repo-prod/web-sales-management
+  tag: {{ version }}
+  pullPolicy: Always
+
+replicaCount: 2
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+environmentVariables:
+
+livenessProbe:
+  livenessProbePath: /ready.html
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+readinessProbe:
+  readinessProbePath: /ready.html
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+startupProbe:
+  startupProbePath: /ready.html
+  failureThreshold: 30
+  periodSeconds: 10
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 512Mi
+  requests:
+    cpu: 200m
+    memory: 256Mi
+
+nodeSelector:
+  iam.gke.io/gke-metadata-server-enabled: 'true'
+
+affinity: {}
+
+tolerations: []
+
+terminationGracePeriodSeconds: 90
+
+backendConfig:
+  create: true
+  securityPolicyName: 'gke-policy'
+
+frontendConfig:
+  create: true
+
+service:
+  enabled: true
+  name: http-web
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 9376
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+    cloud.google.com/backend-config: '{"default": "backendconfig-web-sales-management"}'
+  labels: {}
+
+ingress:
+  enabled: true
+  annotations:
+    ingress.gcp.kubernetes.io/pre-shared-cert: 'ca-root-adelcocl'
+    kubernetes.io/ingress.allow-http: 'true'
+    kubernetes.io/ingress.global-static-ip-name: 'gke-adelco-corp-commerce-prod-extenal-ingress'
+    networking.gke.io/v1beta1.FrontendConfig: 'frontendconfig-web-sales-management'
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 50
+  targetMemoryUtilizationPercentage: 50
+
+serviceAccount:
+  create: true
+  annotations:
+    iam.gke.io/gcp-service-account: sa-web-sales-management@adelco-corp-commerce-prod.iam.gserviceaccount.com
+
+buildVars:
+  NEXT_PUBLIC_LOGIN_REDIRECT_URI: 'https://sales-app.adelco.cl/dashboard'
+  NEXT_PUBLIC_LOGOUT_REDIRECT_URI: 'https://sales-app.adelco.cl/'
+  NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: 'AIzaSyAbxArvDcglvyc5Sv2pvE6BaOfvx-qJMWg'
+  NEXT_PUBLIC_KEYCLOAK_URL: 'https://dia.adelco.cl'
+  NEXT_PUBLIC_KEYCLOAK_REALM: 'ADP'
+  NEXT_PUBLIC_KEYCLOAK_CLIENT_ID: 'adelco_management_app'
+  NEXT_PUBLIC_SALES_BASE_URL: 'https://api.adelco.cl/prod/sales/v1'

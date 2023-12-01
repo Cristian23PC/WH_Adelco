@@ -1,0 +1,8 @@
+{
+  "dynamicPageType": "adelco/product-details",
+  "name": "Product details",
+  "category": "Adelco/Products",
+  "icon": "view_list",
+  "isMultiple": true,
+  "dataSourceType": "adelco/product"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "adelco",
+  "scripts": {
+    "preinstall": "node preinstall.min.js",
+    "prepare": "husky install"
+  },
+  "private": true,
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}

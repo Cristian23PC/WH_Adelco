@@ -1,0 +1,301 @@
+{
+  "id": "70f7149c-25e8-425e-a386-1c430748f5ef",
+  "version": 10,
+  "productType": {
+    "typeId": "product-type",
+    "id": "dde99d6a-563d-43ea-a73d-8e96b513317f"
+  },
+  "name": {
+    "es-CL": "CEREAL GRANOLA ALMMIE VIVO 1x1x370gr"
+  },
+  "description": {
+    "es-CL": "CEREAL GRANOLA ALMMIE VIVO 1x1x370gr"
+  },
+  "categories": [
+    {
+      "typeId": "category",
+      "id": "523fd74f-24f1-49d8-ab5b-aedf840bf2c4"
+    },
+    {
+      "typeId": "category",
+      "id": "cef26266-f881-482a-b8ba-3f0e3134f0b7"
+    },
+    {
+      "typeId": "category",
+      "id": "e1492caf-e5d9-4d3b-8bc3-ea1c24ccc464"
+    }
+  ],
+  "categoryOrderHints": {},
+  "slug": {
+    "es-CL": "103721"
+  },
+  "variants": [],
+  "masterVariant": {
+    "attributes": [
+      {
+        "name": "enabledForDistributionCenters",
+        "value": [
+          {
+            "key": "PM",
+            "label": "Pto Montt"
+          },
+          {
+            "key": "LB",
+            "label": "Lo Boza"
+          }
+        ]
+      },
+      {
+        "name": "sellUnit",
+        "value": {
+          "key": "UN",
+          "label": "UNIDAD"
+        }
+      },
+      {
+        "name": "brand",
+        "value": "VIVO"
+      },
+      {
+        "name": "netContent",
+        "value": {
+          "key": "1UN",
+          "label": "1UN"
+        }
+      },
+      {
+        "name": "netWeight",
+        "value": 0.407
+      },
+      {
+        "name": "grossWeight",
+        "value": 0.407
+      },
+      {
+        "name": "weightUnit",
+        "value": {
+          "key": "kg",
+          "label": "kg"
+        }
+      },
+      {
+        "name": "volume",
+        "value": 0.002
+      },
+      {
+        "name": "volumeUnit",
+        "value": {
+          "key": "m3",
+          "label": "m3"
+        }
+      },
+      {
+        "name": "height",
+        "value": 1
+      },
+      {
+        "name": "heightUnit",
+        "value": {
+          "key": "cm",
+          "label": "cm"
+        }
+      },
+      {
+        "name": "operationalUnit",
+        "value": {
+          "key": "100",
+          "label": "CAJA 1X2"
+        }
+      },
+      {
+        "name": "operationalUnitQuantity",
+        "value": 1
+      },
+      {
+        "name": "operationalUnitPerBox",
+        "value": 7
+      },
+      {
+        "name": "operationalUnitWeight",
+        "value": 1
+      },
+      {
+        "name": "operationalUnitWeightUnit",
+        "value": {
+          "key": "kg",
+          "label": "kg"
+        }
+      },
+      {
+        "name": "EAN",
+        "value": "7800120163141"
+      },
+      {
+        "name": "dangerousGoodsCode",
+        "value": {
+          "key": "017",
+          "label": "N/A"
+        }
+      },
+      {
+        "name": "company",
+        "value": {
+          "key": "2",
+          "label": "Proveedores"
+        }
+      },
+      {
+        "name": "provider",
+        "value": "0100001802"
+      },
+      {
+        "name": "sapId",
+        "value": "103721"
+      }
+    ],
+    "assets": [],
+    "images": [],
+    "price": {
+      "discounted": {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 12500,
+          "fractionDigits": 2
+        },
+        "discount": {
+          "typeId": "product-discount",
+          "id": "831323e8-2ff7-4719-93ae-cc451872db51",
+          "obj": {
+            "id": "831323e8-2ff7-4719-93ae-cc451872db51",
+            "version": 4,
+            "versionModifiedAt": "2023-03-06T21:15:42.808Z",
+            "createdAt": "2023-01-05T14:29:03.413Z",
+            "lastModifiedAt": "2023-03-06T21:15:42.808Z",
+            "lastModifiedBy": {
+              "isPlatformClient": true,
+              "user": {
+                "typeId": "user",
+                "id": "b729ba8c-4b28-4b7f-9746-6ba8e79e97dc"
+              }
+            },
+            "createdBy": {
+              "isPlatformClient": true,
+              "user": {
+                "typeId": "user",
+                "id": "b729ba8c-4b28-4b7f-9746-6ba8e79e97dc"
+              }
+            },
+            "value": {
+              "type": "absolute",
+              "money": [
+                {
+                  "type": "centPrecision",
+                  "currencyCode": "EUR",
+                  "centAmount": 10000,
+                  "fractionDigits": 2
+                },
+                {
+                  "type": "centPrecision",
+                  "currencyCode": "USD",
+                  "centAmount": 10000,
+                  "fractionDigits": 2
+                }
+              ]
+            },
+            "predicate": "sku = \"M0E20000000DLVB\"",
+            "name": {
+              "en": "Cristian Test",
+              "de": ""
+            },
+            "isActive": true,
+            "isValid": true,
+            "sortOrder": "0.5",
+            "references": [],
+            "attributeTypes": {},
+            "key": "cristian-test-discount"
+          }
+        }
+      },
+      "channel": {
+        "typeId": "channel",
+        "id": "4b045485-efdd-44c3-ad15-3a160fdd6f36"
+      },
+      "country": "CL",
+      "key": "INSTITUCIONES-103721",
+      "value": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 22500,
+        "fractionDigits": 2
+      },
+      "id": "40de46a0-c453-4f85-92b7-3ac9491f15d1"
+    },
+    "prices": [],
+    "sku": "103721",
+    "id": 1
+  },
+  "searchKeywords": {},
+  "hasStagedChanges": false,
+  "published": true,
+  "taxCategory": {
+    "typeId": "tax-category",
+    "id": "03151fca-37f5-42df-8bee-4428313e6bc8",
+    "obj": {
+      "id": "03151fca-37f5-42df-8bee-4428313e6bc8",
+      "version": 5,
+      "versionModifiedAt": "2023-01-04T02:31:03.570Z",
+      "createdAt": "2023-01-04T02:20:58.190Z",
+      "lastModifiedAt": "2023-01-04T02:31:03.570Z",
+      "lastModifiedBy": {
+        "isPlatformClient": true,
+        "user": {
+          "typeId": "user",
+          "id": "b729ba8c-4b28-4b7f-9746-6ba8e79e97dc"
+        }
+      },
+      "createdBy": {
+        "isPlatformClient": true,
+        "user": {
+          "typeId": "user",
+          "id": "b729ba8c-4b28-4b7f-9746-6ba8e79e97dc"
+        }
+      },
+      "name": "IVA and ILA Low",
+      "description": "Cristian Test Tax Category",
+      "rates": [
+        {
+          "name": "default",
+          "amount": 0.18,
+          "includedInPrice": true,
+          "country": "US",
+          "state": "California",
+          "id": "7wz6fkSm",
+          "subRates": []
+        },
+        {
+          "name": "IVA-and-ILA-Low",
+          "amount": 0.29,
+          "includedInPrice": true,
+          "country": "US",
+          "state": "Texas",
+          "id": "PFcZzwFZ",
+          "subRates": [
+            {
+              "name": "IVA",
+              "amount": 0.19
+            },
+            {
+              "name": "ILA",
+              "amount": 0.1
+            }
+          ]
+        }
+      ],
+      "key": "cristian-tax"
+    }
+  },
+  "priceMode": "Standalone",
+  "createdAt": "2023-03-14T15:10:37.359Z",
+  "lastModifiedAt": "2023-03-17T16:13:13.081Z"
+}

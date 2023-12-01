@@ -1,0 +1,42 @@
+[
+  {
+    "key": "aisen",
+    "label": "Aisén",
+    "region": "de-aisen-del-gral-c-ibanez-del-campo"
+  },
+  {
+    "key": "chile-chico",
+    "label": "Chile Chico",
+    "region": "de-aisen-del-gral-c-ibanez-del-campo"
+  },
+  {
+    "key": "cisnes",
+    "label": "Cisnes",
+    "region": "de-aisen-del-gral-c-ibanez-del-campo"
+  },
+  {
+    "key": "cochrane",
+    "label": "Cochrane",
+    "region": "de-aisen-del-gral-c-ibanez-del-campo"
+  },
+  {
+    "key": "antofagasta",
+    "label": "Antofagasta",
+    "region": "de-antofagasta"
+  },
+  {
+    "key": "calama",
+    "label": "Calama",
+    "region": "de-antofagasta"
+  },
+  {
+    "key": "maria-elena",
+    "label": "María Elena",
+    "region": "de-antofagasta"
+  },
+  {
+    "key": "arica",
+    "label": "Arica",
+    "region": "de-arica-y-parinacota"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/nest-commercetools": ["./libs/nest-commercetools/src"],
+      "@/nest-commercetools/*": ["./libs/nest-commercetools/src/*"]
+    }
+  },
+  "exclude": ["./node_modules/**/*"],
+  "include": ["src/**/*", "libs/**/src/**/*", ".eslintrc.js", ".lintstagedrc.json", ".prettierrc.js", "**/*.js", "**/*.ts"]
+}

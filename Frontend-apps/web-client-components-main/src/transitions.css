@@ -1,0 +1,107 @@
+.modal-enter {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 200ms ease-in-out;
+}
+
+.modal-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all 200ms ease-in-out;
+}
+
+.backdrop-enter,
+.tooltip-enter {
+  opacity: 0;
+}
+
+.backdrop-enter-active,
+.tooltip-enter-active {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.backdrop-exit,
+.tooltip-exit {
+  opacity: 1;
+}
+
+.backdrop-exit-active,
+.tooltip-exit-active {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.offcanvas-enter-left {
+  translate: -100%;
+  opacity: 0;
+}
+.offcanvas-enter-right {
+  translate: 100%;
+  opacity: 0;
+  transform-origin: right;
+}
+
+.offcanvas-enter-active {
+  translate: 0px;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.offcanvas-exit-left {
+  translate: 0px;
+  opacity: 1;
+  transform-origin: left;
+}
+.offcanvas-exit-right {
+  translate: 0px;
+  opacity: 1;
+  transform-origin: right;
+}
+
+.offcanvas-exit-active-left {
+  translate: -100%;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.offcanvas-exit-active-right {
+  translate: 100%;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 200ms ease-in-out;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 200ms ease-in-out;
+}

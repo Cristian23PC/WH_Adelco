@@ -1,0 +1,25 @@
+{
+  "language": "ts",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "nest-commercetools": {
+      "type": "library",
+      "root": "libs/nest-commercetools",
+      "entryFile": "index",
+      "sourceRoot": "libs/nest-commercetools/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/nest-commercetools/tsconfig.lib.json"
+      }
+    },
+    "price-calculation": {
+      "type": "library",
+      "root": "libs/price-calculation",
+      "entryFile": "index",
+      "sourceRoot": "libs/price-calculation/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/price-calculation/tsconfig.prices.lib.json"
+      }
+    }
+  }
+}

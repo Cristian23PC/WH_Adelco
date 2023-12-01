@@ -1,0 +1,92 @@
+---
+appName: svc-carts
+appVersion: {{ version }}
+
+image:
+  repository: us-central1-docker.pkg.dev/adelco-corp-commerce-prod/docker-repo-prod/svc-carts
+  tag: {{ version }}
+  pullPolicy: Always
+
+
+replicaCount: 1
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+environmentVariables:
+  CT_API_URL: "https://api.us-central1.gcp.commercetools.com"
+  CT_AUTH_URL: "https://auth.us-central1.gcp.commercetools.com"
+  CT_PROJECT_KEY: "adelco-prod"
+  GCP_CT_CREDENTIALS_NAME: "CT_CLIENT_ID_CARTS_SVC"
+  GCP_PROJECT: "adelco-corp-commerce-prod"
+  ENVIRONMENT: "prod"
+  SWAGGER_ENV: "prod"
+  BUSINESS_UNITS_SVC_BASE_URL: "http://service-svc-business-units.commerce.svc.cluster.local/business/v1"
+  ROOT_PATH: "carts"
+  CLP_CURRENCY: "CLP"
+  SUPPLY_CHANNELS_CACHE_TTL: 7200000
+  DEFAULT_CHANNEL_DISTRIBUTION_CENTER_CACHE_TTL: 7200000
+  PAYMENT_METHOD_CONTAINER_NAME: 'payment-method'
+  SALES_CART_VERIFICATION_TIME_MINUTES: 300
+  ECOMMERCE_CART_VERIFICATION_TIME_MINUTES: 300
+  CSR_EMAIL: 'contactanos@adelco.cl'
+
+livenessProbe:
+  livenessProbePath: carts/v1/health/live
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+readinessProbe:
+  readinessProbePath: carts/v1/health/ready
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+startupProbe:
+  startupProbePath: carts/v1/health/ready
+  failureThreshold: 30
+  periodSeconds: 10
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 512Mi
+  requests:
+    cpu: 200m
+    memory: 512Mi
+
+nodeSelector:
+  iam.gke.io/gke-metadata-server-enabled: "true"
+
+affinity: {}
+
+tolerations: []
+
+
+terminationGracePeriodSeconds: 90
+
+service:
+  enabled: true
+  name: http-web
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 9376
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+  labels: {}
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 75
+
+serviceAccount:
+  create: true
+  annotations:
+    iam.gke.io/gcp-service-account: sa-svc-carts@adelco-corp-commerce-prod.iam.gserviceaccount.com

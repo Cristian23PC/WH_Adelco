@@ -1,0 +1,91 @@
+---
+appName: svc-products
+appVersion: {{ version }}
+
+image:
+  repository: us-central1-docker.pkg.dev/adelco-corp-commerce-prod/docker-repo-prod/svc-products
+  tag: {{ version }}
+  pullPolicy: Always
+
+
+replicaCount: 1
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+environmentVariables:
+  CT_API_URL: "https://api.us-central1.gcp.commercetools.com"
+  CT_AUTH_URL: "https://auth.us-central1.gcp.commercetools.com"
+  CT_PROJECT_KEY: "adelco-prod"
+  GCP_PROJECT: "adelco-corp-commerce-prod"
+  GCP_CT_CREDENTIALS_NAME: "CT_CLIENT_ID_PRODUCTS_SVC"
+  ENVIRONMENT: "prod"
+  SWAGGER_ENV: "prod"
+  CLP_CURRENCY: "CLP"
+  COUNTRY_CL: "CL"
+  DEFAULT_SUPPLY_CHANNEL: "1800"
+  FUZZY_THRESHOLD_LENGTH: 5
+  T2_ZONE_CONTAINER_NAME: "delivery-zone"
+  ROOT_PATH: "products"
+  T2_ZONE_CACHE_TTL: 86400000
+  CHANNEL_CACHE_TTL: 86400000
+  PRODUCTS_BY_CATEGORY_SLUG_CACHE_TTL: 7200000
+
+livenessProbe:
+  livenessProbePath: products/v1/health/live
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+readinessProbe:
+  readinessProbePath: products/v1/health/ready
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 3
+startupProbe:
+  startupProbePath: products/v1/health/ready
+  failureThreshold: 30
+  periodSeconds: 10
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 512Mi
+  requests:
+    cpu: 200m
+    memory: 512Mi
+
+nodeSelector:
+  iam.gke.io/gke-metadata-server-enabled: "true"
+
+affinity: {}
+
+tolerations: []
+
+terminationGracePeriodSeconds: 90
+
+service:
+  enabled: true
+  name: http-web
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 9376
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+  labels: {}
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 75
+
+serviceAccount:
+  create: true
+  annotations:
+    iam.gke.io/gcp-service-account: sa-svc-products@adelco-corp-commerce-prod.iam.gserviceaccount.com

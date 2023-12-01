@@ -1,0 +1,14 @@
+{
+  "plugins": ["react", "prettier"],
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "none",
+        "memberDelimiter": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web-bulk-import
+  name: web-bulk-import
+  namespace: commerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-bulk-import
+  template:
+    metadata:
+      labels:
+        app: web-bulk-import
+    spec:
+      containers:
+      - image: {{IMAGE}}
+        name: web-bulk-import
+        ports:
+          - containerPort: 80
+        envFrom:
+        - secretRef:
+            name: web-bulk-import
+        securityContext:
+          allowPrivilegeEscalation: true
+          runAsNonRoot: false
+          runAsUser: 0
+        #readinessProbe:
+          #httpGet:
+            #path: /
+            #port: 3001
+          #initialDelaySeconds: 50
+          #periodSeconds: 20
+          #timeoutSeconds: 30
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 512Mi
+        imagePullPolicy: IfNotPresent
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: frontend-web-bulk-import
+  name: frontend-web-bulk-import
+  namespace: commerce
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+    # cloud.google.com/backend-config: '{"default": "gke-backendconfig"}'
+spec:
+  ports:
+    - name: port443
+      port: 443
+      targetPort: 80
+      protocol: TCP
+    - name: port80
+      port: 80
+      targetPort: 80
+      protocol: TCP
+  type: ClusterIP
+  selector:
+    app: web-bulk-import

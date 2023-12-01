@@ -1,0 +1,36 @@
+{
+  "repositoryUrl": "https://gitlab.com/adelco_corp/commerce/back-services/services/svc-carts.git",
+  "tagFormat": "v${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/exec",
+      {
+        "analyzeCommitsCmd": "echo ${lastRelease.version} > version"
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "verifyReleaseCmd": "echo ${nextRelease.version} > version",
+        "prepareCmd": "jq --arg e ${nextRelease.version} '.version = $e' package.json > package2.json && mv package2.json package.json"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "package.json", "version"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "@semantic-release/gitlab"
+  ],
+  "branches": ["main"]
+}

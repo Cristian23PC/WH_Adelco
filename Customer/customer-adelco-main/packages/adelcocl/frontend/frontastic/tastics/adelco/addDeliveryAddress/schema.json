@@ -1,0 +1,7 @@
+{
+  "name": "Adelco UI Add Delivery Address",
+  "icon": "assignment",
+  "category": "Forms",
+  "schema": [],
+  "tasticType": "adelco/ui/add-delivery-address"
+}

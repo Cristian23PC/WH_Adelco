@@ -1,0 +1,12 @@
+{
+  "tasticType": "adelco/ui/order-confirmation",
+  "name": "Adelco UI Order Confirmation",
+  "icon": "add_shopping_cart",
+  "category": "Order",
+  "schema": [
+    {
+      "name": "Content",
+      "fields": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+adelco_test ansible_ssh_host=10.2.80.5 ansible_ssh_user=deploy ansible_python_interpreter=/usr/bin/python3
+
+[monitor_frontastic]
+adelco_test
+
+[catwalk_frontastic]
+adelco_test
+
+[cache_frontastic]
+adelco_test
+
+[all:vars]
+web_dir=/var/www
+web_user=www-data
+worker_user=www-data
+
+customer=adelco
+customer_secret=$2y$10$Hn85U60PqFcjNqpLw3x1ouBvtFMqJ4T4vdpZPBLSlqA.CpmwbV6p2
+# TODO: We need to get rid of this or give it a better name
+secret=$2y$10$Hn85U60PqFcjNqpLw3x1ouBvtFMqJ4T4vdpZPBLSlqA.CpmwbV6p2
+
+cache_dir=/var/cache/frontastic
+log_dir=/var/log/frontastic
+
+memcache_interface_ip=127.0.0.1
+
+smtp_host=smtp.mailgun.org
+smtp_port=587
+smtp_encryption=tls
+
+is_vm=False
+is_docker=False
+is_production=False
+is_staging=True
+is_development=False
+is_multitenant_apihub=False
+

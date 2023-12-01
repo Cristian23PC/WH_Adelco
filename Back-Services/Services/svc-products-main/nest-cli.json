@@ -1,0 +1,16 @@
+{
+  "language": "ts",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "nest-commercetools": {
+      "type": "library",
+      "root": "libs/nest-commercetools",
+      "entryFile": "index",
+      "sourceRoot": "libs/nest-commercetools/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/nest-commercetools/tsconfig.lib.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "adelco",
+    "scripts": {
+        "preinstall": "node preinstall.min.js"
+    },
+    "private": true,
+    "version": "v1.22.19",
+    "devDependencies": {
+        "google-artifactregistry-auth": "^3.1.2"
+    }
+}

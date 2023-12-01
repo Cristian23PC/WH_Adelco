@@ -1,0 +1,7 @@
+{
+  "customDataSourceType": "adelco/user-details",
+  "name": "Adelco User Details",
+  "category": "User",
+  "icon": "account_circle",
+  "schema": []
+}
